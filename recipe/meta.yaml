@@ -1,5 +1,5 @@
 {% set name = "fancy-collections" %}
-{% set version = "0.1.3" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: f3da85a2694a7e8bca3b4bb95d2b78f45bb89703206f062e026c920e76f75ea4
+  sha256: fd824399ee852e21d3b908088ce996a6930907f6cb504ed291fdf665e172146e
 
 build:
   noarch: python
