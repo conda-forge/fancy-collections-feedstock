@@ -1,5 +1,5 @@
 {% set name = "fancy-collections" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: fd824399ee852e21d3b908088ce996a6930907f6cb504ed291fdf665e172146e
+  sha256: f6afc10ed3d3a11c7e6a2112452918da12dea227d93ff12e6bf62a78a8709ffa
 
 build:
   noarch: python
@@ -21,7 +21,6 @@ requirements:
   run:
     - python >=3.7
     - numpy
-    - scipy
     - pandas
     - sliceable-dict
 
